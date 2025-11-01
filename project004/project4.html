@@ -27,7 +27,7 @@
     function autoSlide(){
         let nextSlide = (slideIndex++) % slideCount;
         document.getElementById("slides").style.transform = `translateX(-${nextSlide * 100}%)`;
-        document.getElementById("L1").innerHTML = Sliding - Slide ${nextSlide + 1};
+        document.getElementById("L1").innerHTML = Sliding - `Slide $ {nextSlide + 1}`;
     }
     window.onload = function(){
         setInterval(autoslide, 3000);

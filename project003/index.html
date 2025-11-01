@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Responsive Page</title>
+        <link rel="icon" type="images/x-icon" href="images/download.png"/>
+        <link rel="stylesheet" href="index.css"/>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">Responsive Website</div>
+                <ul id="navlist">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+                <div class="menu" onclick="menuClick()">&#9776</div>
+            </nav>
+        </header>
+        <section>Section</section>
+        <footer>Copyright @ 2025.All rights reserved.</footer>
+    </body>
+    <script>
+        function menuClick(){
+            document.getElementById("navlist").classList.toggle("active");
+        }
+    </script>
+</html>

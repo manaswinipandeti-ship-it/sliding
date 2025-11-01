@@ -34,14 +34,14 @@ section .slides .slide{
     flex-shrink: 0;
 }
 section .slides .s1{
-    background: url('images/b1.jpg');
+    background-image: url('images/b1.jpg');
 }
 section .slides .s2{
-    background: url('images/b2.jpg');
+    background-image: url('images/b2.jpg');
 }
 section .slides .s3{
-    background: url('images/b3.jpg');
+    background-image: url('images/b3.jpg');
 }
 section .slides .s4{
-    background: url('images/b4.jpg');
+    background-image: url('images/b4.jpg');
 }
