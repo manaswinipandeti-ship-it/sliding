@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <section>
+        <div class="header">
+            <div class="logo">My Dashboard</div>
+            <div class="userinfo">
+                <label>MANASWINI</label>
+                <img src="images/logout.png" alt="" />
+            </div>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li class="active" onclick="loadModules(1)"><img src="images/dashboard.png" alt="" /> Dashboard</li>
+                    <li onclick="loadModules(2)"><img src="images/users.png" alt="" /> Users</li>
+                    <li onclick="loadModules(3)"><img src="images/profile.png" alt="" /> My Profile</li>
+                    <li onclick="loadModules(4)"><img src="images/settings.png" alt="" /> Settings</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="workspace">
+            <iframe src="dashboard.html" id="ifrm"></iframe>
+        </div>
+        <div class="footer">Copyright @ 2025. All rights reserved</div>
+    </section>
+</body>
+<script>
+    function loadModules(mid){
+        const menuItems = document.querySelectorAll('section .menu nav ul li');
+        
+        //Remove active on the li tag
+        for(li of menuItems)
+            li.classList.remove('active');
+
+        //Add active on the li tag which is selected by user
+        event.currentTarget.classList.add('active');
+
+
+        switch(mid){
+            case 1:
+                ifrm.src = "dashboard.html";
+                break;
+            case 2:
+                ifrm.src = "users.html";
+                break;
+            case 3:
+                ifrm.src = "myprofile.html";
+                break;
+            case 4:
+                ifrm.src = "settings.html";
+                break;
+        }
+    }
+</script>
+</html>
